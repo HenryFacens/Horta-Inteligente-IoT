@@ -1,0 +1,12 @@
+services:
+    app:
+        build: .
+        image: oi
+        volumes: 
+            - ./:/app
+        environment: 
+            - PI_DATASERVER=s0tL5TGyV2r0e9YEgriOLroQUElTRVJWRVI
+            - PI_SEARCH_SCOPE=pi:PISERVER
+            - PI_BASICAUTHORIZATION=Basic YWRtaW5pc3RyYXRvcjpTbWFydCoyMDIxQA==
+            - PI_ADDRESS=172.16.230.10
+
